@@ -1,6 +1,8 @@
-- 👋 Hi, I’m Sarvesh Bagwe
-- 👀 I’m interested in Data Science and Machine Learning
-- 🌱 I’m currently learning Data Analysis 
+- 🙏 Namaste, I’m Sarvesh Bagwe
+- 📖 Master's of Information and Communication Technology with specialization in Machine Learning
+- 🎓 Dhirubhai Ambani Institute of Information and communication Technology (M.Tech 2022-2024)| Vishwakarma Government Engineering College (B.E 2018-2022)  
+- 👀 Interested Domains:- Machine Learning, Deep Learning and Natural Language Processing 
+- 🌱 I’m currently exploring Machine Learning with Mathematical Foundations  
 - 📫 How to reach me https://www.linkedin.com/in/sarvesh-bagwe-a482791a4
 
 <!---
