@@ -1,4 +1,12 @@
+# Sarvesh Bagwe - Machine Learning Professional
+
 Greetings, I am Sarvesh Bagwe, a highly accomplished Machine Learning professional with a strong background in Recommendation Systems, Natural Language Processing, and Deep Learning.
+
+## Skills
+- Machine Learning
+- Recommendation Systems
+- Natural Language Processing
+- Deep Learning
 
 I hold a Master's degree in Information and Communication Technology, with a specialization in Machine Learning, from the prestigious Dhirubhai Ambani Institute of Information and Communication Technology. I also completed my B.E in Electronics and Communication Engineering from Vishwakarma Government Engineering College.
 
