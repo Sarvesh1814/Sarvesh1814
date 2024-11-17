@@ -26,8 +26,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --global user.name "Sarvesh Bagwe"
-          git config --global user.email "your-email@example.com"
+          git config --global user.name "Sarvesh1814"
+          git config --global user.email "sbagwe9@gmail.com"
           git add README.md
           git commit -m "Update Skills dynamically"
           git push
