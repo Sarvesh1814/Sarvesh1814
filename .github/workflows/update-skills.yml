@@ -1,0 +1,38 @@
+name: Update Skills
+
+on:
+  schedule:
+    - cron: "0 7 * * 1" # Runs every Monday at 7 AM UTC
+  workflow_dispatch:
+
+jobs:
+  update-skills:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fetch Recent Repositories
+        id: repos
+        run: |
+          repos=$(curl -s "https://api.github.com/users/<your-username>/repos?per_page=100")
+          echo "repos=$repos" >> $GITHUB_ENV
+
+      - name: Analyze Skills
+        id: analyze
+        run: |
+          skills=$(echo "$repos" | jq -r '.[] | .language' | sort | uniq -c | sort -nr | awk '{print $2}')
+          echo "skills=$skills" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          skill_list=$(echo "$skills" | sed ':a;N;$!ba;s/\n/- /g')
+          sed -i "s/## 🛠️ Skills.*/## 🛠️ Skills\n- $skill_list/" README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "Sarvesh1814"
+          git config --global user.email "sbagwe9@gmail.com"
+          git add README.md
+          git commit -m "Update skills dynamically"
+          git push
