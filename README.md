@@ -12,6 +12,19 @@ I am currently working as a **Solutions Engineer at OpsHub Technologies** (since
   **Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT)**
 - **Bachelor of Technology (B.Tech)** in Electronics and Communication Engineering
 
+---
+
+
+### 📊 GitHub Stats
+![Sarvesh's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sarvesh1814&show_icons=true&theme=radical)
+
+---
+
+
+### 🚀 Top Languages
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Sarvesh1814&layout=compact&theme=radical)
+
+---
 
 ## 🛠️ Skills
 <!--START_SECTION:skills-->
@@ -20,14 +33,6 @@ I am currently working as a **Solutions Engineer at OpsHub Technologies** (since
 - Machine Learning
 - Recommendation Systems
 <!--END_SECTION:skills-->
-
-I hold a Master's degree in Information and Communication Technology, specializing in Machine Learning, from the prestigious Dhirubhai Ambani Institute of Information and Communication Technology. I also completed my B.E in Electronics and Communication Engineering from Vishwakarma Government Engineering College.
-
-### 📊 GitHub Stats
-![Sarvesh's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sarvesh1814&show_icons=true&theme=radical)
-
-### 🚀 Top Languages
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Sarvesh1814&layout=compact&theme=radical)
 
 ---
 
