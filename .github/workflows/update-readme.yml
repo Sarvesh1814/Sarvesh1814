@@ -8,12 +8,20 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - name: Get GitHub Activity
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://github.com/sarvesh1814.atom"
+
+      - name: Update Activity in README
+        run: |
+          # Ensure the comment tags are present to update the activity
+          sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n$(curl -s https://github.com/sarvesh1814.atom | tail -n 10) \n<!-- BLOG-POST-LIST:END -->' README.md
+
       - name: Commit and Push Changes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
