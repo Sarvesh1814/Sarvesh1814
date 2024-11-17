@@ -23,3 +23,6 @@ I hold a Master's degree in Information and Communication Technology, specializi
 
 Feel free to connect on [LinkedIn](https://www.linkedin.com/in/sarvesh-bagwe-a482791a4).
 
+### 💬 Quote of the Day
+> "The best way to predict the future is to invent it." – Alan Kay
+
