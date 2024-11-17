@@ -1,8 +1,8 @@
-name: Update README
+name: Update README with Recent Activity
 
 on:
   schedule:
-    - cron: "0 7 * * *" # Runs every day at 7 AM UTC
+    - cron: '*/240 * * * *'  # Runs every 240 minutes
   workflow_dispatch:
 
 jobs:
@@ -10,5 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: anuraghazra/github-readme-stats@master
-      - uses: jamesgeorge007/github-activity-readme@v0.1.1
+      - name: Get Recent GitHub Activity
+        uses: jamesgeorge007/github-activity-readme@v0.2.2
+        with:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Update README with recent activity"
+          git push
