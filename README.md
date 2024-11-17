@@ -14,12 +14,10 @@ I am currently working as a **Solutions Engineer at OpsHub Technologies** (since
 
 ---
 
-
 ### 📊 GitHub Stats
 ![Sarvesh's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sarvesh1814&show_icons=true&theme=radical)
 
 ---
-
 
 ### 🚀 Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Sarvesh1814&layout=compact&theme=radical)
