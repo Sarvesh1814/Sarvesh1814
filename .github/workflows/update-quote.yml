@@ -1,0 +1,33 @@
+name: Update Quote of the Day
+
+on:
+  schedule:
+    - cron: "0 9 * * *" # Updates every day at 9 AM UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fetch Quote of the Day
+        id: quote
+        run: |
+          response=$(curl -s "https://api.quotable.io/random")
+          quote=$(echo "$response" | jq -r '.content')
+          author=$(echo "$response" | jq -r '.author')
+          echo "quote=$quote" >> $GITHUB_ENV
+          echo "author=$author" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          sed -i "s/> .*/> \"$quote\" – $author/" README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "Sarvesh Bagwe"
+          git config --global user.email "your-email@example.com"
+          git add README.md
+          git commit -m "Update Quote of the Day"
+          git push
