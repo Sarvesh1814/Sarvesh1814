@@ -1,6 +1,17 @@
-# Sarvesh Bagwe - Machine Learning Professional
+# 👋 Welcome to My GitHub Profile
 
-Greetings, I am Sarvesh Bagwe, a highly accomplished Machine Learning professional with a strong background in Recommendation Systems, Natural Language Processing, and Deep Learning.
+## Sarvesh Bagwe 
+
+I am currently working as a **Solutions Engineer at OpsHub Technologies** (since January 2024), where I focus on delivering innovative enterprise solutions that streamline data integration and optimize system workflows. My expertise lies in applying advanced **Machine Learning** and **Deep Learning** techniques to solve complex business problems.
+
+---
+
+## 🎓 Education
+
+- **Master of Technology (M.Tech)** in Information and Communication Technology (Specialization: Machine Learning)  
+  **Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT)**
+- **Bachelor of Technology (B.Tech)** in Electronics and Communication Engineering
+
 
 ## 🛠️ Skills
 <!--START_SECTION:skills-->
@@ -18,9 +29,32 @@ I hold a Master's degree in Information and Communication Technology, specializi
 ### 🚀 Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Sarvesh1814&layout=compact&theme=radical)
 
+---
+
+## 💼 Professional Skills
+
+- **Programming**: Python, MATLAB
+- **Data Analysis & Machine Learning**: Pandas, TensorFlow
+- **Expertise**: Machine Learning, Deep Learning, Data Analytics, Solution Engineering
+
+---
+
+### 📂 Featured Projects
+
+I am passionate about leveraging AI to build impactful solutions. My GitHub includes projects on:
+- **Recommendation Systems**
+- **Natural Language Processing (NLP) Applications**
+- **Deep Learning Models for Image Analysis**
+
+Explore my repositories for detailed implementations and code samples.
+
+---
+
 ### 🔄 Recent Activity
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
+
+---
 
 ### 💬 Quote of the Day
 <!--START_SECTION:quote-->
