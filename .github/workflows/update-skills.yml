@@ -2,7 +2,7 @@ name: Update Skills
 
 on:
   schedule:
-    - cron: "0 7 * * 1" # Runs every Monday at 7 AM UTC
+    - cron: "0 9 * * *" # Runs every day at 9 AM UTC
   workflow_dispatch:
 
 jobs:
@@ -12,27 +12,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Fetch Recent Repositories
-        id: repos
+      - name: Analyze Skills from Repositories
+        id: skills
         run: |
-          repos=$(curl -s "https://api.github.com/users/<your-username>/repos?per_page=100")
-          echo "repos=$repos" >> $GITHUB_ENV
+          repos=$(curl -s "https://api.github.com/users/Sarvesh1814/repos?per_page=100")
+          languages=$(echo "$repos" | jq -r '.[] | .language' | sort | uniq -c | sort -nr | awk '{print $2}')
+          skill_list=$(echo "$languages" | sed ':a;N;$!ba;s/\n/- /g')
+          echo "skill_list=$skill_list" >> $GITHUB_ENV
 
-      - name: Analyze Skills
-        id: analyze
+      - name: Update Skills in README
         run: |
-          skills=$(echo "$repos" | jq -r '.[] | .language' | sort | uniq -c | sort -nr | awk '{print $2}')
-          echo "skills=$skills" >> $GITHUB_ENV
-
-      - name: Update README
-        run: |
-          skill_list=$(echo "$skills" | sed ':a;N;$!ba;s/\n/- /g')
-          sed -i "s/## 🛠️ Skills.*/## 🛠️ Skills\n- $skill_list/" README.md
+          sed -i "/<!--START_SECTION:skills-->/,/<!--END_SECTION:skills-->/c\<!--START_SECTION:skills-->\n- $skill_list\n<!--END_SECTION:skills-->" README.md
 
       - name: Commit changes
         run: |
-          git config --global user.name "Sarvesh1814"
-          git config --global user.email "sbagwe9@gmail.com"
+          git config --global user.name "Sarvesh Bagwe"
+          git config --global user.email "your-email@example.com"
           git add README.md
-          git commit -m "Update skills dynamically"
+          git commit -m "Update Skills dynamically"
           git push
