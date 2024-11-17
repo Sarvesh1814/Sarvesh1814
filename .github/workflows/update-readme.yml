@@ -13,7 +13,7 @@ jobs:
       - name: Get GitHub Activity
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://github.com/sarvesh1814.atom"
+          feed_list: "https://github.com/Sarvesh1814.atom"
       - name: Commit and Push Changes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
