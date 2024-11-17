@@ -55,11 +55,7 @@ Explore my repositories for detailed implementations and code samples.
 
 ### 🔄 Recent Activity
 <!-- BLOG-POST-LIST:START -->
-- [Sarvesh1814 pushed to main in Sarvesh1814/Sarvesh1814](https://github.com/Sarvesh1814/Sarvesh1814/compare/8fba2f1f4d...ea90a6cf88)
-- [Sarvesh1814 pushed to main in Sarvesh1814/Sarvesh1814](https://github.com/Sarvesh1814/Sarvesh1814/compare/918d49abc0...8fba2f1f4d)
-- [Sarvesh1814 pushed to main in Sarvesh1814/Sarvesh1814](https://github.com/Sarvesh1814/Sarvesh1814/compare/e750d1b0f4...918d49abc0)
-- [Sarvesh1814 pushed to main in Sarvesh1814/Sarvesh1814](https://github.com/Sarvesh1814/Sarvesh1814/compare/8f7f33bd72...e750d1b0f4)
-- [Sarvesh1814 pushed to main in Sarvesh1814/Sarvesh1814](https://github.com/Sarvesh1814/Sarvesh1814/compare/573ae4a451...8f7f33bd72)
+$(curl -s https://github.com/sarvesh1814.atom | tail -n 10) 
 <!-- BLOG-POST-LIST:END -->
 
 ---
