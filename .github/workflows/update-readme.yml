@@ -2,7 +2,7 @@ name: Update README with Recent Activity
 
 on:
   schedule:
-    - cron: '*/240 * * * *'  # Runs every 240 minutes
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Get Recent GitHub Activity
-        uses: jamesgeorge007/github-activity-readme@v0.2.2
+        uses: jamesgeorge007/github-activity-readme@v1
         with:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit and Push Changes
