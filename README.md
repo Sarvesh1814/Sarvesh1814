@@ -26,10 +26,7 @@ I am currently working as a **Solutions Engineer at OpsHub Technologies** (since
 
 ## 🛠️ Skills
 <!--START_SECTION:skills-->
-- Natural Language Processing
-- Deep Learning
-- Machine Learning
-- Recommendation Systems
+- Jupyter- null- Python
 <!--END_SECTION:skills-->
 
 ---
