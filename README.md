@@ -26,7 +26,7 @@ I am currently working as a **Solutions Engineer at OpsHub Technologies** (since
 
 ## 🛠️ Skills
 <!--START_SECTION:skills-->
-- 
+- Jupyter- null- Python
 <!--END_SECTION:skills-->
 
 ---
